@@ -19,7 +19,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Nikola_Vasilj",
    "photo": "https://digitalhub.fifa.com/transform/be1c5819-9bc1-4bf3-b677-9172d1be6bea/VASILJ-Nikola_482978",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -95,7 +95,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Dennis_Had%C5%BEikaduni%C4%87",
    "photo": "https://digitalhub.fifa.com/transform/6cacbe9a-89b9-4eee-8d20-4e68fc0ef7ad/HADZIKADUNIC-Dennis_430194",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -133,7 +133,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Sead_Kola%C5%A1inac",
    "photo": "https://digitalhub.fifa.com/transform/bed62578-6b40-402e-8c63-94159988fe95/KOLASINAC-Sead_376230",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -171,7 +171,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Nikola_Kati%C4%87",
    "photo": "https://digitalhub.fifa.com/transform/71b1a703-25aa-4193-8bd7-daf0108e7009/KATIC-Nikola_489520",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -190,7 +190,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Stjepan_Radelji%C4%87",
    "photo": "https://digitalhub.fifa.com/transform/d1b9ca91-fc68-44ee-8548-8f2fb4d10a46/RADELJIC-Stjepan_489521",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -209,7 +209,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Arjan_Mali%C4%87",
    "photo": "https://digitalhub.fifa.com/transform/8b907cf5-e659-4584-acc5-5b0db0f85594/MALIC-Arjan_494639",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -228,7 +228,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Benjamin_Tahirovi%C4%87",
    "photo": "https://digitalhub.fifa.com/transform/998f85b6-06db-4822-99de-68010b6cdc61/TAHIROVIC-Benjamin_483966",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -266,7 +266,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ivan_Ba%C5%A1i%C4%87",
    "photo": "https://digitalhub.fifa.com/transform/7ab9c56e-39f0-4d4a-b5c4-e0583fd57319/BASIC-Ivan_482974",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -285,7 +285,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ivan_%C5%A0unji%C4%87",
    "photo": "https://digitalhub.fifa.com/transform/ddc91c53-fc37-453c-b16e-50ef5e2dd2da/SUNJIC-Ivan_372436",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -304,7 +304,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Amar_Memi%C4%87",
    "photo": "https://digitalhub.fifa.com/transform/c57e2c22-f510-4109-b3e7-72b5a6b862a9/MEMIC-Amar_494640",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -342,7 +342,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/D%C5%BEenis_Burni%C4%87",
    "photo": "https://digitalhub.fifa.com/transform/87cebb80-d20e-42c4-9030-8adcb1a3e1a8/BURNIC-Dzenis_389886",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -361,9 +361,9 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ermin_Mahmi%C4%87",
    "photo": "https://digitalhub.fifa.com/transform/ef292137-a5b1-44b8-b329-031d23320552/MAHMIC-Ermin_522846",
-   "wcApps": 1,
-   "wcGoals": 1,
-   "wcYellow": 0,
+   "wcApps": 2,
+   "wcGoals": 2,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -399,7 +399,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ermedin_Demirovi%C4%87",
    "photo": "https://digitalhub.fifa.com/transform/b9e9f187-0936-4aba-9c70-2a4bcf2281e0/DEMIROVIC-Ermedin_436743",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -418,7 +418,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Edin_D%C5%BEeko",
    "photo": "https://digitalhub.fifa.com/transform/b5fa7216-27c0-4652-b7df-b099e97a5604/DZEKO-Edin_300409",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -437,8 +437,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Kerim_Alajbegovi%C4%87",
    "photo": "https://digitalhub.fifa.com/transform/9587bf1f-6c8f-4b8d-80c7-799edc4a7036/ALAJBEGOVIC-Kerim_504990",
-   "wcApps": 2,
-   "wcGoals": 0,
+   "wcApps": 3,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -456,7 +456,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Esmir_Bajraktarevi%C4%87",
    "photo": "https://digitalhub.fifa.com/transform/6a74409c-c030-405e-a042-1c01f408eeff/BAJRAKTAREVIC-Esmir_464566",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0

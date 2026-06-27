@@ -19,7 +19,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Diogo_Costa",
    "photo": "https://digitalhub.fifa.com/transform/7c3541e5-a8cb-458c-b368-7f57c1b5ae03/DIOGO-COSTA_403001",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -76,7 +76,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/N%C3%A9lson_Semedo",
    "photo": "https://digitalhub.fifa.com/transform/7b97ea5c-f883-424a-9133-eead7e175b00/NELSON-SEMEDO_395212",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -95,7 +95,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/R%C3%BAben_Dias",
    "photo": "https://digitalhub.fifa.com/transform/7eab2fa3-e7d1-4876-aaaa-a44a9e923750/RUBEN-DIAS_384752",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -152,9 +152,9 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Renato_Veiga",
    "photo": "https://digitalhub.fifa.com/transform/556c6a9a-facb-4a04-8b68-15bee3974c9f/RENATO-VEIGA_489704",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -190,7 +190,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jo%C3%A3o_Cancelo",
    "photo": "https://digitalhub.fifa.com/transform/bb6c8016-d4b5-4434-9bba-1ec8cac37300/JOAO-CANCELO_368649",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -228,8 +228,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Nuno_Mendes_(footballer%2C_born_2002)",
    "photo": "https://digitalhub.fifa.com/transform/f8d5d7b8-bb64-4427-80d1-911d68b2dd1a/NUNO-MENDES_433195",
-   "wcApps": 1,
-   "wcGoals": 0,
+   "wcApps": 2,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -266,7 +266,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Bruno_Fernandes",
    "photo": "https://digitalhub.fifa.com/transform/4a31c35d-c697-4c1a-ac51-a120b82a3d83/BRUNO-FERNANDES_395206",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -285,7 +285,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Bernardo_Silva",
    "photo": "https://digitalhub.fifa.com/transform/97535989-5b6f-414b-a582-54a0c48df12a/BERNARDO-SILVA_395205",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -304,7 +304,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jo%C3%A3o_Neves",
    "photo": "https://digitalhub.fifa.com/transform/c79cf261-45b2-484b-860f-9adac3ed7d17/JOAO-NEVES_484141",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -342,7 +342,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Vitinha",
    "photo": "https://digitalhub.fifa.com/transform/8d21116d-608f-409b-932b-71c1ee1a043c/VITINHA_441149",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -361,8 +361,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
    "photo": "https://digitalhub.fifa.com/transform/7b63f223-fda2-4d56-b218-f143f0abd2d8/CRISTIANO-RONALDO_201200",
-   "wcApps": 1,
-   "wcGoals": 0,
+   "wcApps": 2,
+   "wcGoals": 2,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -399,7 +399,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jo%C3%A3o_F%C3%A9lix",
    "photo": "https://digitalhub.fifa.com/transform/e1fd310b-cac5-47ef-95e9-9d0b8b41ba2f/JOAO-FELIX_418535",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -418,7 +418,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Francisco_Trinc%C3%A3o",
    "photo": "https://digitalhub.fifa.com/transform/3aaa45cd-d807-4825-9145-3b1865a009bb/FRANCISCO-TRINCAO_418561",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -437,8 +437,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Rafael_Le%C3%A3o",
    "photo": "https://digitalhub.fifa.com/transform/a5a760a7-7b47-42ed-8302-3ea75dbe9fc4/RAFAEL-LEAO_418550",
-   "wcApps": 1,
-   "wcGoals": 0,
+   "wcApps": 2,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -456,7 +456,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Pedro_Neto",
    "photo": "https://digitalhub.fifa.com/transform/e4e58acb-f7af-402c-a7b8-e284583ce14f/PEDRO-NETO_418548",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -494,7 +494,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Francisco_Concei%C3%A7%C3%A3o",
    "photo": "https://digitalhub.fifa.com/transform/1cb86e09-cf4e-4b60-8849-09d17dd1f8ad/FRANCISCO-CONCEICAO_485081",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0

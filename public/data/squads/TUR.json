@@ -57,7 +57,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/U%C4%9Furcan_%C3%87ak%C4%B1r",
    "photo": "https://digitalhub.fifa.com/transform/6cedaf47-2a99-4e31-bb0d-46ce78df26a6/CAKIR-Ugurcan_441181",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -76,7 +76,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Zeki_%C3%87elik",
    "photo": "https://digitalhub.fifa.com/transform/903b63c2-ab06-47b8-911c-bf4f026601fd/CELIK-Zeki_433072",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -114,7 +114,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/%C3%87a%C4%9Flar_S%C3%B6y%C3%BCnc%C3%BC",
    "photo": "https://digitalhub.fifa.com/transform/1b2e4fe1-8aec-4473-845b-d0ccb4e20a3a/SOYUNCU-Caglar_401167",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -133,7 +133,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Eren_Elmal%C4%B1",
    "photo": "https://digitalhub.fifa.com/transform/9e9cf618-403b-4984-801d-3e82f0e11d3e/ELMALI-Eren_484065",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -152,7 +152,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Abd%C3%BClkerim_Bardakc%C4%B1",
    "photo": "https://digitalhub.fifa.com/transform/de2b1023-3aee-4233-b83d-07f94fd288d4/BARDAKCI-Abdulkerim_484082",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -171,7 +171,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ozan_Kabak",
    "photo": "https://digitalhub.fifa.com/transform/c42910db-c5e6-4706-bc99-1e08456bd3ef/KABAK-Ozan_406249",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -190,7 +190,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Mert_M%C3%BCld%C3%BCr",
    "photo": "https://digitalhub.fifa.com/transform/61f43913-2824-4711-9838-0d620f393353/MULDUR-Mert_430120",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -247,7 +247,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Salih_%C3%96zcan",
    "photo": "https://digitalhub.fifa.com/transform/1e968b8d-1b4c-4bce-86b7-8a4ad87eef3a/OZCAN-Salih_389907",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -266,7 +266,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Orkun_K%C3%B6k%C3%A7%C3%BC",
    "photo": "https://digitalhub.fifa.com/transform/90a510ff-865f-4293-a59b-8a92e12a89b0/KOKCU-Orkun_433118",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -323,8 +323,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Kaan_Ayhan",
    "photo": "https://digitalhub.fifa.com/transform/e9747d8e-47e9-45f3-b3b7-d3caf1ba1ecf/AYHAN-Kaan_336170",
-   "wcApps": 0,
-   "wcGoals": 0,
+   "wcApps": 1,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -361,8 +361,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Arda_G%C3%BCler",
    "photo": "https://digitalhub.fifa.com/transform/e2f26175-13ac-4850-acd7-6408de06ce19/GULER-Arda_484087",
-   "wcApps": 2,
-   "wcGoals": 0,
+   "wcApps": 3,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -399,7 +399,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Kenan_Y%C4%B1ld%C4%B1z",
    "photo": "https://digitalhub.fifa.com/transform/7dff809e-a965-4b36-a7b5-8da772fc96a5/YILDIZ-Kenan_484112",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -418,7 +418,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/%C4%B0rfan_Can_Kahveci",
    "photo": "https://digitalhub.fifa.com/transform/4661ea5f-9a56-4047-bbcf-6748250e0ebe/KAHVECI-Irfan-Can_472877",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -456,8 +456,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Bar%C4%B1%C5%9F_Alper_Y%C4%B1lmaz",
    "photo": "https://digitalhub.fifa.com/transform/49e46d17-bf69-41b1-a8df-5aeabf137c7d/YILMAZ-Baris-Alper_484139",
-   "wcApps": 2,
-   "wcGoals": 0,
+   "wcApps": 3,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -475,7 +475,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/O%C4%9Fuz_Ayd%C4%B1n",
    "photo": "https://digitalhub.fifa.com/transform/b29233e3-0131-45eb-96e4-ad77044a1959/AYDIN-Oguz_486076",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -494,7 +494,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Can_Uzun",
    "photo": "https://digitalhub.fifa.com/transform/18128593-2c01-460e-9db1-9212fa7dc369/UZUN-Can_486074",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0

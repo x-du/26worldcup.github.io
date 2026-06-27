@@ -19,7 +19,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ra%C3%BAl_Rangel_(footballer)",
    "photo": "https://digitalhub.fifa.com/transform/3ea092ae-841d-4dc6-9ca0-78eb4dfb97c7/RANGEL-Raul_485070",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -57,7 +57,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Guillermo_Ochoa",
    "photo": "https://digitalhub.fifa.com/transform/fedeac9f-968d-4d4c-b08a-5b2bf157c396/OCHOA-Guillermo_215285",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -76,7 +76,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jorge_S%C3%A1nchez_(footballer%2C_born_1997)",
    "photo": "https://digitalhub.fifa.com/transform/8640d435-8aba-4b52-a864-9952d3a6db5c/SANCHEZ-Jorge_403596",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -95,7 +95,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/C%C3%A9sar_Montes",
    "photo": "https://digitalhub.fifa.com/transform/c8c3fa3a-9001-4221-ab3c-754158c0ad8a/MONTES-Cesar_395516",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 1
@@ -114,9 +114,9 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Edson_%C3%81lvarez",
    "photo": "https://digitalhub.fifa.com/transform/b1581870-6bef-4c29-9a06-f306bbf03ca8/ALVAREZ-Edson_400634",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -152,7 +152,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Israel_Reyes",
    "photo": "https://digitalhub.fifa.com/transform/1e7c7c32-135c-46ba-9aff-429bfb1478aa/REYES-Israel_441261",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -171,8 +171,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Mateo_Ch%C3%A1vez",
    "photo": "https://digitalhub.fifa.com/transform/8e8884ee-8964-4fb7-82d8-8a5d341e79a6/CHAVEZ-Mateo_500038",
-   "wcApps": 0,
-   "wcGoals": 0,
+   "wcApps": 1,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -190,7 +190,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jes%C3%BAs_Gallardo",
    "photo": "https://digitalhub.fifa.com/transform/f1417540-93cb-4b82-9cfe-223e877d5923/GALLARDO-Jesus_402772",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -228,7 +228,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Luis_Romo",
    "photo": "https://digitalhub.fifa.com/transform/bc7f864e-c553-4995-9eb3-62139e29a7d7/ROMO-Luis_430763",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -247,8 +247,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/%C3%81lvaro_Fidalgo",
    "photo": "https://digitalhub.fifa.com/transform/fda68f1a-eceb-4219-8f1b-ed6b1f2e37ed/FIDALGO-Alvaro_416576",
-   "wcApps": 1,
-   "wcGoals": 0,
+   "wcApps": 2,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -285,7 +285,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Obed_Vargas",
    "photo": "https://digitalhub.fifa.com/transform/c0990d50-6120-459c-a66a-bd91ee7e46bc/VARGAS-Obed_461177",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -304,7 +304,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Gilberto_Mora_(footballer%2C_born_2008)",
    "photo": "https://digitalhub.fifa.com/transform/028c85e0-509a-43c4-904a-58ce2d4f6f24/MORA-Gilberto_500037",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -399,7 +399,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Santiago_Gim%C3%A9nez",
    "photo": "https://digitalhub.fifa.com/transform/0e27d0c6-e057-4d0c-a603-3843fcd0c542/GIMENEZ-Santiago_430759",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -437,8 +437,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Juli%C3%A1n_Qui%C3%B1ones",
    "photo": "https://digitalhub.fifa.com/transform/ea06becb-97b2-4f89-8464-5e0854cb7f81/QUINONES-Julian_429157",
-   "wcApps": 2,
-   "wcGoals": 1,
+   "wcApps": 3,
+   "wcGoals": 2,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -475,7 +475,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Guillermo_Mart%C3%ADnez_(footballer)",
    "photo": "https://digitalhub.fifa.com/transform/7f04e2d8-1f0b-491e-8551-5a856979bc97/MARTINEZ-Guillermo_386339",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -494,7 +494,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Roberto_Alvarado",
    "photo": "https://digitalhub.fifa.com/transform/b1a8a14a-2a27-4524-a6ed-679aca39d35d/ALVARADO-Roberto_403585",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0

@@ -214,15 +214,16 @@ export default function Stats() {
               <tbody>
                 {(stats.cards?.players ?? []).map((c) => {
                   const team = teams[c.code]
+                  const label = c.staff ? t('statTeamOfficial') : c.name
                   return (
-                    <tr key={c.id}>
+                    <tr key={c.staff ? `staff-${c.code}` : c.id}>
                       <td className="sx-player">
-                        {team && c.no != null ? (
+                        {team && c.no != null && !c.staff ? (
                           <Link className="sx-pname" to={`/team/${c.code}?p=${c.no}`}>
-                            {c.name}
+                            {label}
                           </Link>
                         ) : (
-                          c.name
+                          label
                         )}
                       </td>
                       <td className="sx-team-cell">
@@ -242,6 +243,14 @@ export default function Stats() {
                 })}
               </tbody>
             </table>
+            {(stats.cards?.playerCount ?? stats.cards?.players.length ?? 0) > 20 && (
+              <p className="small muted sx-cards-note">
+                {t('statCardsNote', {
+                  shown: stats.cards?.players.length ?? 20,
+                  total: stats.cards?.playerCount ?? stats.cards?.players.length ?? 20,
+                })}
+              </p>
+            )}
           </section>
         )}
 

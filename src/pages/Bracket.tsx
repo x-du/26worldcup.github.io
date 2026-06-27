@@ -1,13 +1,14 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import type { Match, MatchSide, Stage } from '../types'
 import { useI18n } from '../i18n'
 import { useSettings } from '../settings/SettingsContext'
-import { useAppData } from '../data/DataContext'
+import { useAppData, useData } from '../data/DataContext'
 import { displayTz, fmtDate, fmtTime } from '../utils/time'
 import { placeholderLabel, STAGE_LABEL_KEY } from '../utils/helpers'
 import { resolvedSlots } from '../utils/bracketResolve'
+import { predictedBracket } from '../utils/bracketPredict'
 import Flag from '../components/Flag'
 import Trophy from '../components/Trophy'
 import TeamName from '../components/TeamName'
@@ -29,7 +30,16 @@ const HEAD_COLS: { col: number; stage: Stage }[] = [
 ]
 
 /** winner/loser of a side once the match is finished (null while undecided) */
-function outcome(m: Match, side: MatchSide | null, other: MatchSide | null): 'w' | 'l' | null {
+function outcome(
+  m: Match,
+  side: MatchSide | null,
+  other: MatchSide | null,
+  predWinner?: string,
+): 'w' | 'l' | null {
+  if (predWinner && side && other) {
+    if (predWinner === side.code) return 'w'
+    if (predWinner === other.code) return 'l'
+  }
   if (m.status !== 'finished' || !side || !other) return null
   if (m.winner) {
     if (m.winner === side.code) return 'w'
@@ -65,6 +75,7 @@ function BkRow({
   ph,
   flagSize,
   resolved,
+  predWinner,
 }: {
   m: Match
   side: MatchSide | null
@@ -72,6 +83,7 @@ function BkRow({
   ph: string | null
   flagSize: number
   resolved?: string
+  predWinner?: string
 }) {
   const { t, pick } = useI18n()
   const { teams } = useAppData()
@@ -81,7 +93,7 @@ function BkRow({
   const team = code ? (teams[code] ?? null) : null
   const label = team && code ? pick(team.name, code) : ph ? compactPlaceholder(ph, t) : t('tbd')
   const title = team && code ? label : ph ? placeholderLabel(ph, t) : t('tbd')
-  const out = outcome(m, side, other)
+  const out = outcome(m, side, other, predWinner)
   const cls = out === 'w' ? ' bk-win' : out === 'l' ? ' bk-lose' : ''
   return (
     <div className={`bk-row${cls}`} title={title}>
@@ -104,10 +116,14 @@ function BkNode({
   m,
   big = false,
   overlay,
+  predWinner,
+  predicted = false,
 }: {
   m: Match
   big?: boolean
   overlay?: { home?: string; away?: string }
+  predWinner?: string
+  predicted?: boolean
 }) {
   const { t, locale } = useI18n()
   const { settings } = useSettings()
@@ -117,7 +133,7 @@ function BkNode({
   return (
     <Link
       to={`/match/${m.id}`}
-      className={`bk-node${big ? ' bk-big' : ''}${m.status === 'live' ? ' bk-on' : ''}`}
+      className={`bk-node${big ? ' bk-big' : ''}${m.status === 'live' ? ' bk-on' : ''}${predicted ? ' bk-pred' : ''}`}
     >
       {big && (
         <div className="bk-final-head">
@@ -150,6 +166,7 @@ function BkNode({
         ph={m.phA}
         flagSize={big ? 22 : 18}
         resolved={overlay?.home}
+        predWinner={predWinner}
       />
       <BkRow
         m={m}
@@ -158,6 +175,7 @@ function BkNode({
         ph={m.phB}
         flagSize={big ? 22 : 18}
         resolved={overlay?.away}
+        predWinner={predWinner}
       />
     </Link>
   )
@@ -166,9 +184,19 @@ function BkNode({
 export default function Bracket() {
   const { t, locale } = useI18n()
   const { settings } = useSettings()
-  const { matches, venues } = useAppData()
-  const { standings } = useAppData()
-  const overlay = useMemo(() => resolvedSlots(matches, standings), [matches, standings])
+  const { matches, venues, teams, standings, probs } = useAppData()
+  const { simModel, loadSimModel } = useData()
+  useEffect(() => {
+    loadSimModel()
+  })
+  const [predictMode, setPredictMode] = useState(false)
+  const officialOverlay = useMemo(() => resolvedSlots(matches, standings), [matches, standings])
+  const predicted = useMemo(() => {
+    if (!simModel) return null
+    return predictedBracket(matches, teams, venues, simModel, probs)
+  }, [matches, teams, venues, simModel, probs])
+  const overlay = predictMode && predicted ? predicted.overlay : officialOverlay
+  const predWinners = predictMode && predicted ? predicted.winners : undefined
   // remembered across visits (narrow-screen half-tree view)
   const [half, setHalfState] = useState<'l' | 'r'>(() => {
     try {
@@ -236,13 +264,14 @@ export default function Bracket() {
 
   const championCode = useMemo(() => {
     const f = bk.final
+    if (predictMode && predicted?.champion) return predicted.champion
     if (f?.status !== 'finished') return null
     if (f.winner) return f.winner
     const o = outcome(f, f.home, f.away)
     if (o === 'w' && f.home) return f.home.code
     if (o === 'l' && f.away) return f.away.code
     return null
-  }, [bk.final])
+  }, [bk.final, predictMode, predicted])
 
   const fmtRange = (r?: [Match, Match]): string => {
     if (!r) return t('none')
@@ -269,7 +298,16 @@ export default function Bracket() {
             className={`bk-cell bk-${side} ${roundCls[ri]} ${feed}${join}`}
             style={{ gridColumn: cols[ri], gridRow: `${2 + i * span} / span ${span}` }}
           >
-            {m ? <BkNode m={m} overlay={overlay[m.id]} /> : <div className="bk-ghost" />}
+            {m ? (
+              <BkNode
+                m={m}
+                overlay={overlay[m.id]}
+                predWinner={predWinners?.get(m.n)}
+                predicted={predictMode}
+              />
+            ) : (
+              <div className="bk-ghost" />
+            )}
           </div>,
         )
       })
@@ -279,8 +317,19 @@ export default function Bracket() {
 
   return (
     <div className="bk-page">
-      <div className="page-head">
+      <div className="page-head bk-head-row">
         <h1>{t('bracketTitle')}</h1>
+        <div className="bk-predict-ctrl">
+          <button
+            type="button"
+            className={`btn${predictMode ? ' on' : ''}`}
+            disabled={!simModel}
+            onClick={() => setPredictMode((v) => !v)}
+          >
+            {predictMode ? t('bkPredictClear') : t('bkPredictFill')}
+          </button>
+          {predictMode && <p className="bk-predict-hint">{t('bkPredictHint')}</p>}
+        </div>
       </div>
 
       <div className="bk-wrap">
@@ -326,7 +375,13 @@ export default function Bracket() {
             </div>
             <div className="bk-center-mid">
               {bk.final ? (
-                <BkNode m={bk.final} big overlay={overlay[bk.final.id]} />
+                <BkNode
+                  m={bk.final}
+                  big
+                  overlay={overlay[bk.final.id]}
+                  predWinner={predWinners?.get(bk.final.n)}
+                  predicted={predictMode}
+                />
               ) : (
                 <div className="bk-ghost" />
               )}
@@ -335,7 +390,12 @@ export default function Bracket() {
               {bk.third && (
                 <div className="bk-third">
                   <div className="bk-third-label">{t(STAGE_LABEL_KEY.third)}</div>
-                  <BkNode m={bk.third} overlay={overlay[bk.third.id]} />
+                  <BkNode
+                    m={bk.third}
+                    overlay={overlay[bk.third.id]}
+                    predWinner={predWinners?.get(bk.third.n)}
+                    predicted={predictMode}
+                  />
                 </div>
               )}
             </div>
@@ -352,11 +412,24 @@ export default function Bracket() {
               <TeamName code={championCode} bold flagSize={26} />
             </div>
           )}
-          {bk.final && <BkNode m={bk.final} big overlay={overlay[bk.final.id]} />}
+          {bk.final && (
+            <BkNode
+              m={bk.final}
+              big
+              overlay={overlay[bk.final.id]}
+              predWinner={predWinners?.get(bk.final.n)}
+              predicted={predictMode}
+            />
+          )}
           {bk.third && (
             <div className="bk-third">
               <div className="bk-third-label">{t(STAGE_LABEL_KEY.third)}</div>
-              <BkNode m={bk.third} overlay={overlay[bk.third.id]} />
+              <BkNode
+                m={bk.third}
+                overlay={overlay[bk.third.id]}
+                predWinner={predWinners?.get(bk.third.n)}
+                predicted={predictMode}
+              />
             </div>
           )}
         </div>

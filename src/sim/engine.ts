@@ -111,10 +111,7 @@ const poisson = (lambda: number, rnd: () => number): number => {
 
 /** sample a 90' scoreline consistent with a pre-sampled outcome */
 function sampleScore(outcome: 'h' | 'd' | 'a', dr: number, rnd: () => number): { h: number; a: number } {
-  const share = 1 / (1 + 10 ** (-dr / 400))
-  const total = 2.6
-  const lh = Math.max(total * share, 0.35)
-  const la = Math.max(total - lh, 0.35)
+  const { lh, la } = goalExpectations(dr)
   for (let t = 0; t < 60; t++) {
     const h = poisson(lh, rnd)
     const a = poisson(la, rnd)
@@ -126,6 +123,61 @@ function sampleScore(outcome: 'h' | 'd' | 'a', dr: number, rnd: () => number): {
   if (outcome === 'h') return { h: 1, a: 0 }
   if (outcome === 'a') return { h: 0, a: 1 }
   return { h: 1, a: 1 }
+}
+
+/** Poisson expected goals per side from rating gap (same as sampleScore) */
+export function goalExpectations(dr: number): { lh: number; la: number } {
+  const share = 1 / (1 + 10 ** (-dr / 400))
+  const total = 2.6
+  const lh = Math.max(total * share, 0.35)
+  const la = Math.max(total - lh, 0.35)
+  return { lh, la }
+}
+
+function poissonPmf(k: number, lambda: number): number {
+  if (k < 0 || lambda <= 0) return k === 0 ? 1 : 0
+  let logP = -lambda + k * Math.log(lambda)
+  for (let i = 2; i <= k; i++) logP -= Math.log(i)
+  return Math.exp(logP)
+}
+
+function pickOutcome(h: number, d: number, a: number): 'h' | 'd' | 'a' {
+  if (d >= h && d >= a) return 'd'
+  if (h >= a) return 'h'
+  return 'a'
+}
+
+/** deterministic most-likely scoreline for a group match (Poisson × W/D/L pick) */
+export function predictGroupScoreline(
+  model: SimModel,
+  home: string,
+  away: string,
+  venueCountry: string | undefined,
+  probs?: { h: number; d: number; a: number },
+): { h: number; a: number } {
+  const blended = pairProbs(model, home, away, venueCountry)
+  const { lh, la } = goalExpectations(blended.dr)
+  const outcome = probs
+    ? pickOutcome(probs.h, probs.d, probs.a)
+    : pickOutcome(blended.h * 100, blended.d * 100, blended.a * 100)
+
+  let bestH = 0
+  let bestA = 0
+  let bestP = -1
+  for (let gh = 0; gh <= 6; gh++) {
+    for (let ga = 0; ga <= 6; ga++) {
+      if (outcome === 'h' && gh <= ga) continue
+      if (outcome === 'a' && ga <= gh) continue
+      if (outcome === 'd' && gh !== ga) continue
+      const p = poissonPmf(gh, lh) * poissonPmf(ga, la)
+      if (p > bestP) {
+        bestP = p
+        bestH = gh
+        bestA = ga
+      }
+    }
+  }
+  return { h: bestH, a: bestA }
 }
 
 /** simulate one match; knockout draws continue into ET and penalties */
@@ -251,7 +303,7 @@ function resolveTie(rows: GroupRow[], results: Result[], rankOf: (c: string) => 
   return out
 }
 
-function tableFor(codes: string[], results: Result[], rankOf: (c: string) => number): GroupRow[] {
+export function tableFor(codes: string[], results: Result[], rankOf: (c: string) => number): GroupRow[] {
   const rows = new Map<string, GroupRow>(
     codes.map((c) => [c, { code: c, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 }]),
   )

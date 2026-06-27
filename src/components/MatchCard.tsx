@@ -15,6 +15,8 @@ interface MatchCardProps {
   showWeather?: boolean
   /** DOM id on the card root, used as a scroll target by the matches list */
   domId?: string
+  /** model-predicted score for a scheduled match (Groups predict mode) */
+  predScore?: { h: number; a: number }
 }
 
 function SideRow({
@@ -22,23 +24,32 @@ function SideRow({
   side,
   other,
   ph,
+  predScore,
 }: {
   m: Match
   side: MatchSide | null
   other: MatchSide | null
   ph: string | null
+  predScore?: { h: number; a: number }
 }) {
   const { t, pick } = useI18n()
   const { teams } = useAppData()
   const finished = m.status === 'finished'
+  const live = m.status === 'live'
+  const showPred = !!predScore && !finished && !live && side
   const team = side ? teams[side.code] : null
+  const isHome = side?.code === m.home?.code
+  const predVal = showPred ? (isHome ? predScore.h : predScore.a) : null
+  const otherPred = showPred ? (isHome ? predScore.a : predScore.h) : null
+  const isPredLoser =
+    showPred && predVal != null && otherPred != null && predVal < otherPred
   const isLoser =
     finished &&
     side &&
     other &&
     (m.winner ? m.winner !== side.code && m.winner === other.code : (side.score ?? 0) < (other.score ?? 0))
   return (
-    <div className={`mc-row${isLoser ? ' loser' : ''}`}>
+    <div className={`mc-row${isLoser || isPredLoser ? ' loser' : ''}`}>
       {team ? (
         <>
           <Flag team={team} size={24} />
@@ -50,11 +61,18 @@ function SideRow({
           <span className="nm tbd">{ph ? placeholderLabel(ph, t) : t('tbd')}</span>
         </>
       )}
-      {(m.status === 'finished' || m.status === 'live') && side && (
-        <span className="score">
-          {side.score ?? '–'}
-          {(m.home?.pen ?? 0) + (m.away?.pen ?? 0) > 0 && <small className="muted"> ({side.pen ?? 0})</small>}
+      {showPred && predVal != null ? (
+        <span className="score pred" title={t('mcPredScore')}>
+          {predVal}
         </span>
+      ) : (
+        (finished || live) &&
+        side && (
+          <span className="score">
+            {side.score ?? '–'}
+            {(m.home?.pen ?? 0) + (m.away?.pen ?? 0) > 0 && <small className="muted"> ({side.pen ?? 0})</small>}
+          </span>
+        )
       )}
     </div>
   )
@@ -63,7 +81,7 @@ function SideRow({
 /** memoized: match objects are stable references from data.matches, so filter
  * interactions on list pages skip re-rendering the ~100 unchanged cards
  * (i18n/settings changes still propagate via context) */
-function MatchCard({ match: m, hideDate = false, showWeather = false, domId }: MatchCardProps) {
+function MatchCard({ match: m, hideDate = false, showWeather = false, domId, predScore }: MatchCardProps) {
   const { t, pick, locale } = useI18n()
   const { settings } = useSettings()
   const { venues, weather } = useAppData()
@@ -72,7 +90,11 @@ function MatchCard({ match: m, hideDate = false, showWeather = false, domId }: M
   const w = showWeather ? weather[m.id] : undefined
 
   return (
-    <Link id={domId} to={`/match/${m.id}`} className={`match-card${m.status === 'live' ? ' live' : ''}`}>
+    <Link
+      id={domId}
+      to={`/match/${m.id}`}
+      className={`match-card${m.status === 'live' ? ' live' : ''}${predScore ? ' mc-pred' : ''}`}
+    >
       <div className="mc-top">
         <span>{t('matchN', { n: m.n })}</span>
         <span className="chip">
@@ -88,8 +110,8 @@ function MatchCard({ match: m, hideDate = false, showWeather = false, domId }: M
       </div>
       <div className="mc-mid">
         <div className="mc-teams">
-          <SideRow m={m} side={m.home} other={m.away} ph={m.phA} />
-          <SideRow m={m} side={m.away} other={m.home} ph={m.phB} />
+          <SideRow m={m} side={m.home} other={m.away} ph={m.phA} predScore={predScore} />
+          <SideRow m={m} side={m.away} other={m.home} ph={m.phB} predScore={predScore} />
         </div>
         <div className="mc-when">
           {m.status === 'finished' ? (

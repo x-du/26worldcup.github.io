@@ -19,7 +19,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Yassine_Bounou",
    "photo": "https://digitalhub.fifa.com/transform/338ae8a7-8734-423e-ae54-2f783dba77ce/BOUNOU-Yassine_356956",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -76,8 +76,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Achraf_Hakimi",
    "photo": "https://digitalhub.fifa.com/transform/22c6ca49-7262-4799-8a9f-530e427321ac/HAKIMI-Achraf_400721",
-   "wcApps": 2,
-   "wcGoals": 0,
+   "wcApps": 3,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -95,7 +95,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Noussair_Mazraoui",
    "photo": "https://digitalhub.fifa.com/transform/000d2b43-36ff-4fe5-90d8-23c96e555c56/MAZRAOUI-Noussair_411680",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -171,7 +171,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Chadi_Riad",
    "photo": "https://digitalhub.fifa.com/transform/074f7da4-2459-4f56-b245-0b496782d067/RIAD-Chadi_448607",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -209,7 +209,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Redouane_Halhal",
    "photo": "https://digitalhub.fifa.com/transform/e515f777-c663-46b0-87e3-9f467c48184f/HALHAL-Redouane_485767",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -228,7 +228,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Anass_Salah-Eddine",
    "photo": "https://digitalhub.fifa.com/transform/06a01d87-4cc8-4a19-b4c3-b4902454e44e/SALAH-EDDINE-Anass_424071",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -247,7 +247,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Sofyan_Amrabat",
    "photo": "https://digitalhub.fifa.com/transform/cf6efacc-6c34-4679-b833-b2c5371b4ee6/AMRABAT-Sofyan_372266",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -304,7 +304,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Azzedine_Ounahi",
    "photo": "https://digitalhub.fifa.com/transform/f823c3da-d540-436c-9b56-bfccdc4b51bc/OUNAHI-Azzedine_441307",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -323,8 +323,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ismael_Saibari",
    "photo": "https://digitalhub.fifa.com/transform/250526c6-26b5-4425-8a21-231c7952e34d/SAIBARI-Ismael_448598",
-   "wcApps": 2,
-   "wcGoals": 2,
+   "wcApps": 3,
+   "wcGoals": 3,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -342,7 +342,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Samir_El_Mourabet",
    "photo": "https://digitalhub.fifa.com/transform/1c4672ea-a846-45f7-ae85-85ec7559a30c/EL-MOURABET-Samir_505097",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -361,8 +361,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Gessime_Yassine",
    "photo": "https://digitalhub.fifa.com/transform/dd763e4f-0cfe-44b1-8e18-ea842260c807/YASSINE-Gessime_505112",
-   "wcApps": 0,
-   "wcGoals": 0,
+   "wcApps": 1,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -380,7 +380,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Bilal_El_Khannouss",
    "photo": "https://digitalhub.fifa.com/transform/8e73a0cb-8200-4870-b0bc-12901de8076f/EL-KHANNOUSS-Bilal_448612",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -399,7 +399,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Neil_El_Aynaoui",
    "photo": "https://digitalhub.fifa.com/transform/3d04af2c-60a8-48c8-be3e-d13bf5373c0c/EL-AYNAOUI-Neil_485740",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -418,8 +418,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Soufiane_Rahimi",
    "photo": "https://digitalhub.fifa.com/transform/7de765a2-f6c6-4d70-badd-a929c4cab547/RAHIMI-Soufiane_433426",
-   "wcApps": 2,
-   "wcGoals": 0,
+   "wcApps": 3,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -437,7 +437,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz",
    "photo": "https://digitalhub.fifa.com/transform/b05c2233-cb0a-4abc-9413-e56ad25f0899/DIAZ-Brahim_430740",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -475,7 +475,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ayoub_El_Kaabi",
    "photo": "https://digitalhub.fifa.com/transform/207a8ba8-3f3f-4f86-9730-335f21c1924f/EL-KAABI-Ayoub_411678",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0

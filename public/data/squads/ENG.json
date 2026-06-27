@@ -19,7 +19,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jordan_Pickford",
    "photo": "https://digitalhub.fifa.com/transform/5f9b3bbf-edb5-4956-bce7-2d0a8e77f6ab/PICKFORD-Jordan_336022",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -76,7 +76,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ezri_Konsa",
    "photo": "https://digitalhub.fifa.com/transform/54b28723-92e1-42e8-97b5-162f5099cf60/KONSA-Ezri_403049",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -95,7 +95,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Nico_O'Reilly",
    "photo": "https://digitalhub.fifa.com/transform/6a6be1c6-3496-49ba-81ca-354bdb2f404c/OREILLY-Nico_390761",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -133,7 +133,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Marc_Gu%C3%A9hi",
    "photo": "https://digitalhub.fifa.com/transform/c9686f87-8abd-45fb-a1e0-321ee8470dd6/GUEHI-Marc_405841",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -190,7 +190,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Reece_James",
    "photo": "https://digitalhub.fifa.com/transform/1ffcc3c3-fdf3-4b61-9ac5-299213771a62/JAMES-Reece_439641",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -209,7 +209,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Djed_Spence",
    "photo": "https://digitalhub.fifa.com/transform/03356baa-b368-4192-bf86-ad3033e57ad2/SPENCE-Djed_506329",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -247,9 +247,9 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Declan_Rice",
    "photo": "https://digitalhub.fifa.com/transform/acb98657-fa9b-4202-bc38-075a97b5bf78/RICE-Declan_433097",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -266,7 +266,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Elliot_Anderson_(footballer)",
    "photo": "https://digitalhub.fifa.com/transform/8da5855f-c957-4151-94a0-731e9714249f/ANDERSON-Elliot_481610",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -285,7 +285,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jude_Bellingham",
    "photo": "https://digitalhub.fifa.com/transform/d711b37f-ec06-4ea7-bb52-50ba0a42ef67/BELLINGHAM-Jude_448202",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -342,7 +342,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Morgan_Rogers",
    "photo": "https://digitalhub.fifa.com/transform/426bfdb9-3999-4826-81b8-dd33691a45a2/ROGERS-Morgan_492716",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -361,7 +361,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Eberechi_Eze",
    "photo": "https://digitalhub.fifa.com/transform/c08bf1d9-1dce-4862-b810-2f9e198a4950/EZE-Eberechi_473113",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -380,7 +380,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Bukayo_Saka",
    "photo": "https://digitalhub.fifa.com/transform/b1182d25-62ad-4ad8-8bae-2b7577569484/MUMIN-Abdul_441336",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -399,7 +399,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Harry_Kane",
    "photo": "https://digitalhub.fifa.com/transform/5ad83fe6-1139-4f92-a97c-669052eb1755/KANE-Harry_369419",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 2,
    "wcYellow": 0,
    "wcRed": 0
@@ -418,7 +418,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Marcus_Rashford",
    "photo": "https://digitalhub.fifa.com/transform/1c89a3e5-8d8f-474f-a0fe-8c39faa3dc8d/RASHFORD-Marcus_401470",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -437,7 +437,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Anthony_Gordon_(footballer)",
    "photo": "https://digitalhub.fifa.com/transform/bb7bbfe0-791d-408e-a2c2-f33156fce3e8/GORDON-Anthony_448189",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -475,7 +475,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Noni_Madueke",
    "photo": "https://digitalhub.fifa.com/transform/115733f4-8e52-477a-867f-063f1e2c7752/MADUEKE-Noni_489732",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0

@@ -137,6 +137,10 @@ const en: Dict = {
   bracketWinnerOf: 'Winner M{n}',
   bracketLoserOf: 'Loser M{n}',
   bracketThird: '3rd {x}',
+  bkPredictFill: 'Fill with pre-game prediction',
+  bkPredictClear: 'Show official bracket',
+  bkPredictHint: 'Group tables and knockout paths from model win probabilities (most likely outcome per match).',
+  mcPredScore: 'Predicted score (most likely line from model)',
   // match detail
   matchNotFound: 'Match not found.',
   lineups: 'Line-ups',
@@ -330,6 +334,9 @@ const en: Dict = {
   statCards: 'Cards',
   statYellowCards: 'Yellow cards',
   statRedCards: 'Red cards',
+  statTeamOfficial: 'Team official',
+  statCardsNote:
+    'Top 20 by red cards, then yellow cards ({shown} of {total} carded). Totals above include every booking.',
   statUpset: 'Biggest upset',
   upsetFavOdds: "Favourite's pre-match win probability",
   statBiggestWin: 'Biggest win',

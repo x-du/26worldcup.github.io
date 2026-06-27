@@ -243,10 +243,11 @@ export interface MatchProbs {
 
 export interface Stats {
   scorers: { id: string; name: string; code: string; no?: number; goals: number; ownGoals: number }[]
-  cards?: {
+    cards?: {
     yellow: number
     red: number
-    players: { id: string; name: string; code: string; no?: number; y: number; r: number }[]
+    playerCount?: number // all carded players/officials before the top-20 list cap
+    players: { id: string | null; name: string; code: string; no?: number; y: number; r: number; staff?: boolean }[]
   }
   attAvg?: number | null
   biggestWin?: { diff: number; id?: string; h: string; a: string; hs: number; as: number } | null

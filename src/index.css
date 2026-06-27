@@ -675,6 +675,10 @@ input.input {
 .match-card.live {
   border-color: color-mix(in srgb, var(--live) 45%, var(--border));
 }
+.match-card.mc-pred {
+  border-style: dashed;
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+}
 
 .mc-top {
   display: flex;
@@ -720,6 +724,10 @@ input.input {
   color: var(--text-3);
   font-weight: 600;
   font-size: 0.85rem;
+}
+.mc-row .score.pred {
+  color: var(--accent-2);
+  font-size: 0.98rem;
 }
 .mc-row.loser .nm,
 .mc-row.loser .score {

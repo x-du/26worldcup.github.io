@@ -8,6 +8,32 @@
   --bk-node-min: 64px;
   --bk-line: color-mix(in srgb, var(--border-strong) 85%, transparent);
 }
+
+.bk-head-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px 16px;
+}
+.bk-predict-ctrl {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  max-width: min(100%, 420px);
+}
+.bk-predict-hint {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--text-3);
+  text-align: end;
+  line-height: 1.35;
+}
+.bk-node.bk-pred {
+  border-style: dashed;
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+}
 @media (min-width: 1160px) {
   .bk-page {
     --bk-gap: 16px;

@@ -3,8 +3,9 @@ import type { ReactNode } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import type { Match, StandingRow } from '../types'
 import { useI18n } from '../i18n'
-import { useAppData } from '../data/DataContext'
+import { useAppData, useData } from '../data/DataContext'
 import { qualState, sortMatches } from '../utils/helpers'
+import { predictedMatchScores, predictedStandings } from '../utils/bracketPredict'
 import MatchCard from '../components/MatchCard'
 import TeamName from '../components/TeamName'
 import Icon from '../components/Icon'
@@ -131,7 +132,21 @@ function TieBreak() {
 
 export default function Groups() {
   const { t } = useI18n()
-  const { standings, matches } = useAppData()
+  const { standings: officialStandings, matches, teams, venues, probs } = useAppData()
+  const { simModel, loadSimModel } = useData()
+  useEffect(() => {
+    loadSimModel()
+  })
+  const [predictMode, setPredictMode] = useState(false)
+  const predicted = useMemo(() => {
+    if (!simModel) return null
+    return predictedStandings(matches, teams, venues, simModel, probs)
+  }, [matches, teams, venues, simModel, probs])
+  const predScores = useMemo(() => {
+    if (!simModel) return null
+    return predictedMatchScores(matches, teams, venues, simModel, probs)
+  }, [matches, teams, venues, simModel, probs])
+  const standings = predictMode && predicted ? predicted : officialStandings
   const [open, setOpen] = useState<Record<string, boolean>>({})
 
   const letters = useMemo(() => Object.keys(standings.groups).sort(), [standings.groups])
@@ -170,8 +185,19 @@ export default function Groups() {
 
   return (
     <div>
-      <div className="page-head">
+      <div className="page-head gp-head-row">
         <h1>{t('groupsTitle')}</h1>
+        <div className="gp-predict-ctrl">
+          <button
+            type="button"
+            className={`btn${predictMode ? ' on' : ''}`}
+            disabled={!simModel}
+            onClick={() => setPredictMode((v) => !v)}
+          >
+            {predictMode ? t('bkPredictClear') : t('bkPredictFill')}
+          </button>
+          {predictMode && <p className="gp-predict-hint">{t('bkPredictHint')}</p>}
+        </div>
       </div>
 
       <div className="gp-grid">
@@ -180,7 +206,7 @@ export default function Groups() {
           const fixtures = fixturesByGroup[g] ?? []
           const isOpen = !!open[g]
           return (
-            <section key={g} id={`group-${g}`} className="card gp-card">
+            <section key={g} id={`group-${g}`} className={`card gp-card${predictMode ? ' gp-pred' : ''}`}>
               <header className="gp-head">
                 <span className="gp-letter" aria-hidden="true">
                   {g}
@@ -229,7 +255,11 @@ export default function Groups() {
                   {isOpen && (
                     <div id={`gp-fix-${g}`} className="cards-grid gp-fix">
                       {fixtures.map((m) => (
-                        <MatchCard key={m.id} match={m} />
+                        <MatchCard
+                          key={m.id}
+                          match={m}
+                          predScore={predictMode ? predScores?.[m.id] : undefined}
+                        />
                       ))}
                     </div>
                   )}
@@ -243,7 +273,7 @@ export default function Groups() {
       <div className="section-title">
         <h2>{t('thirdsTitle')}</h2>
       </div>
-      <section className="card gp-card gp-thirds">
+      <section className={`card gp-card gp-thirds${predictMode ? ' gp-pred' : ''}`}>
         <table className="gp-table" aria-label={t('thirdsTitle')}>
           <thead>
             <tr>

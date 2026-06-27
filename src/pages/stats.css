@@ -232,3 +232,8 @@
 .sx-rank-row .chip {
   flex: none;
 }
+
+.sx-cards-note {
+  margin: 10px 0 0;
+  line-height: 1.4;
+}

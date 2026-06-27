@@ -1,5 +1,31 @@
 /* ============ Groups page ============ */
 
+.gp-head-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px 16px;
+}
+.gp-predict-ctrl {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  max-width: min(100%, 420px);
+}
+.gp-predict-hint {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--text-3);
+  text-align: end;
+  line-height: 1.35;
+}
+.gp-card.gp-pred {
+  border-style: dashed;
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+}
+
 .gp-grid {
   display: grid;
   grid-template-columns: 1fr;

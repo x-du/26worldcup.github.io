@@ -38,7 +38,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Abduvohid_Nematov",
    "photo": "https://digitalhub.fifa.com/transform/1f1bfea3-5228-4270-ad8d-c1c8f08ef522/NEMATOV-Abduvohid_479110",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -75,7 +75,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Manchester_City_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Abdukodir_Khusanov",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -94,7 +94,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Khojiakbar_Alijonov",
    "photo": "https://digitalhub.fifa.com/transform/d87a603d-2a55-4ffd-b51b-c7d2d65dec58/ALIJONOV-Khojiakbar_479079",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -132,7 +132,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Rustam_Ashurmatov",
    "photo": "https://digitalhub.fifa.com/transform/8f306071-778f-4a11-bb29-76de06ba7a30/ASHURMATOV-Rustam_371415",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -151,7 +151,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Sherzod_Nasrullaev",
    "photo": "https://digitalhub.fifa.com/transform/a985d3f1-344f-45c8-947c-e8e458dca32c/NASRULLAEV-Sherzod_479075",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -189,7 +189,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Abdulla_Abdullaev",
    "photo": "https://digitalhub.fifa.com/transform/f771f66d-6eb1-41ec-aa83-644325f6b8fa/ABDULLAEV-Abdulla_479042",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -208,7 +208,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Bekhruz_Karimov",
    "photo": "https://digitalhub.fifa.com/transform/0b62bdac-feaf-4b23-a22b-31a73c68a475/KARIMOV-Behruzjon_475260",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -265,7 +265,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Akmal_Mozgovoy",
    "photo": "https://digitalhub.fifa.com/transform/acea76c2-8e6c-4335-90da-062b53054ec0/MOZGOVOY-Akmal_479106",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -284,7 +284,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Otabek_Shukurov",
    "photo": "https://digitalhub.fifa.com/transform/eb1daf2f-c27b-45a4-a574-7ac0abd24061/SHUKUROV-Otabek_371348",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -322,9 +322,9 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Odiljon_Hamrobekov",
    "photo": "https://digitalhub.fifa.com/transform/3653b567-3520-45f9-b757-4f13a939ef39/XAMROBEKOV-Odiljon_371345",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -341,7 +341,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ruslanbek_Jiyanov",
    "photo": "https://digitalhub.fifa.com/transform/fa770cc8-4001-45ea-9087-2ab624e7ff79/RUSLANBEK-JIYANOV_484303",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -398,7 +398,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Azizjon_Ganiev",
    "photo": "https://digitalhub.fifa.com/transform/8ab4a549-fd61-4a4c-810a-c04ebd897062/GANIEV-Azizjon_479086",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -417,7 +417,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Abbosbek_Fayzullaev",
    "photo": "https://digitalhub.fifa.com/transform/184c6d22-8ce0-4701-8582-39e1653b77f8/FAYZULLAEV-Abbosbek_464933",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -436,7 +436,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Sherzod_Esanov",
    "photo": "https://digitalhub.fifa.com/transform/0b3fd6fd-f931-45b7-ab1d-38b1751cb0a2/ESANOV-Sherzod_464897",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -455,7 +455,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Eldor_Shomurodov",
    "photo": "https://digitalhub.fifa.com/transform/d311d575-b59c-4d9f-8825-b506b0aa3c49/SHOMURODOV-Eldor_385475",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -493,7 +493,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Igor_Sergeev",
    "photo": "https://digitalhub.fifa.com/transform/5e05ab4f-a3c8-4086-b1a1-54ec0f4ee475/SERGEEV-Igor_368546",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0

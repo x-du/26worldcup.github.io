@@ -1017,8 +1017,12 @@ function computeStats(lineups, matches) {
         const isRed = (b.card ?? 0) >= 2
         if (isRed) red++
         else yellow++
-        const key = `${b.player}`
-        carded[key] ??= { id: b.player, name: nameOf(b.player), code, no: numberOf[b.player], y: 0, r: 0 }
+        const key = b.player == null ? `${code}:staff` : `${b.player}`
+        if (b.player == null) {
+          carded[key] ??= { id: null, staff: true, name: '', code, no: null, y: 0, r: 0 }
+        } else {
+          carded[key] ??= { id: b.player, name: nameOf(b.player), code, no: numberOf[b.player], y: 0, r: 0 }
+        }
         if (isRed) carded[key].r++
         else carded[key].y++
       }
@@ -1098,6 +1102,10 @@ function computeStats(lineups, matches) {
     }
   }
 
+  const cardedList = Object.values(carded).sort(
+    (a, b) => b.r - a.r || b.y - a.y || a.name.localeCompare(b.name),
+  )
+
   return {
     scorers: Object.values(scorers)
       .filter((s) => s.goals > 0)
@@ -1106,9 +1114,8 @@ function computeStats(lineups, matches) {
     cards: {
       yellow,
       red,
-      players: Object.values(carded)
-        .sort((a, b) => b.r - a.r || b.y - a.y || a.name.localeCompare(b.name))
-        .slice(0, 20),
+      playerCount: cardedList.length,
+      players: cardedList.slice(0, 20),
     },
     attAvg,
     biggestWin,
